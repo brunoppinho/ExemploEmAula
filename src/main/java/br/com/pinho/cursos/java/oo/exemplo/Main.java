@@ -5,7 +5,7 @@ import br.com.pinho.cursos.java.oo.exemplo.repository.ContaRepositoryMemoria;
 
 import java.math.BigDecimal;
 
-public class MainExemplo {
+public class Main {
 
     public static void main(String[] args) {
         String senhaPadrao = "SENHAPADRAO";
