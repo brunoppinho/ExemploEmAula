@@ -1,9 +1,11 @@
-package br.com.pinho.cursos.java.oo.exemplo;
+package br.com.pinho.cursos.java.oo.exemplo.repository;
+
+import br.com.pinho.cursos.java.oo.exemplo.model.Conta;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContaRepository implements Repository<Conta> {
+public class ContaRepositoryMemoria implements Repository<Conta> {
 
     private static List<Conta> contas = new ArrayList<>();
 

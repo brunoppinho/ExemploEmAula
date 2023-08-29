@@ -1,8 +1,11 @@
-package br.com.pinho.cursos.java.oo.exemplo;
+package br.com.pinho.cursos.java.oo.exemplo.utils;
 
 import java.util.Base64;
 
 public class Criptografia {
+
+    private Criptografia() {
+    }
 
     public static String criptografar(String senha) {
         return Base64.getEncoder().encodeToString(senha.getBytes());

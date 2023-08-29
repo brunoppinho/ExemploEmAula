@@ -1,4 +1,4 @@
-package br.com.pinho.cursos.java.oo.exemplo;
+package br.com.pinho.cursos.java.oo.exemplo.repository;
 
 import java.util.List;
 

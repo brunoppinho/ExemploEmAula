@@ -1,14 +1,17 @@
 package br.com.pinho.cursos.java.oo.exemplo;
 
+import br.com.pinho.cursos.java.oo.exemplo.model.Conta;
+import br.com.pinho.cursos.java.oo.exemplo.repository.ContaRepositoryMemoria;
+
 import java.math.BigDecimal;
 
 public class MainExemplo {
 
     public static void main(String[] args) {
         String senhaPadrao = "SENHAPADRAO";
-        br.com.pinho.cursos.java.oo.exemplo.ContaRepository repository = new br.com.pinho.cursos.java.oo.exemplo.ContaRepository();
-        br.com.pinho.cursos.java.oo.exemplo.Conta origem = new br.com.pinho.cursos.java.oo.exemplo.Conta();
-        br.com.pinho.cursos.java.oo.exemplo.Conta destino = new br.com.pinho.cursos.java.oo.exemplo.Conta();
+        ContaRepositoryMemoria repository = new ContaRepositoryMemoria();
+        Conta origem = new Conta();
+        Conta destino = new Conta();
         origem.setSaldo(BigDecimal.TEN);
         destino.setSaldo(BigDecimal.TEN);
         repository.create(origem);
