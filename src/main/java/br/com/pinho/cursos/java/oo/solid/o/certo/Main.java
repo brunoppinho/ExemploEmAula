@@ -1,7 +1,5 @@
 package br.com.pinho.cursos.java.oo.solid.o.certo;
 
-import br.com.pinho.cursos.java.oo.solid.o.errado.CalculaRecebimento;
-
 public class Main {
 
     public static void main(String[] args) {
