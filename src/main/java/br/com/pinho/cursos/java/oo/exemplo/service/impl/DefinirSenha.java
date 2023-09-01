@@ -1,4 +1,4 @@
-package br.com.pinho.cursos.java.oo.exemplo.service;
+package br.com.pinho.cursos.java.oo.exemplo.service.impl;
 
 import br.com.pinho.cursos.java.oo.exemplo.model.Conta;
 import br.com.pinho.cursos.java.oo.exemplo.repository.Repository;

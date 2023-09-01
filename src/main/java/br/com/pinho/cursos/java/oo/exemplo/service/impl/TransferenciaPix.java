@@ -1,14 +1,14 @@
-package br.com.pinho.cursos.java.oo.exemplo.service;
+package br.com.pinho.cursos.java.oo.exemplo.service.impl;
 
 import br.com.pinho.cursos.java.oo.exemplo.model.Conta;
 import br.com.pinho.cursos.java.oo.exemplo.utils.ValidarSenha;
 
 import java.math.BigDecimal;
 
-public class Pix {
+public class TransferenciaPix {
     private final ValidarSenha validaSenha;
 
-    public Pix(ValidarSenha validaSenha) {
+    public TransferenciaPix(ValidarSenha validaSenha) {
         this.validaSenha = validaSenha;
     }
 

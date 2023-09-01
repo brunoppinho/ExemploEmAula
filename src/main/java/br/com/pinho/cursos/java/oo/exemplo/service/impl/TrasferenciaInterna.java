@@ -1,22 +1,22 @@
-package br.com.pinho.cursos.java.oo.exemplo.service;
+package br.com.pinho.cursos.java.oo.exemplo.service.impl;
 
 import br.com.pinho.cursos.java.oo.exemplo.model.Conta;
 import br.com.pinho.cursos.java.oo.exemplo.utils.ValidarSenha;
 
 import java.math.BigDecimal;
 
-public class Ted {
+public class TrasferenciaInterna {
 
     private final ValidarSenha validaSenha;
 
-    public Ted(ValidarSenha validaSenha) {
+    public TrasferenciaInterna(ValidarSenha validaSenha) {
         this.validaSenha = validaSenha;
     }
 
     public Conta execute(Conta origem, Conta destino, BigDecimal valor, String senha) {
         if (validaSenha.execute(origem, senha)) {
             transfereDinheiro(origem, valor, destino);
-            System.out.println("Mensagem de integração com sistema TED");
+            System.out.println("Mensagem de integração com sistema de transferência interna");
         } else {
             System.out.println("Senha inválida. Tente novamente.");
         }

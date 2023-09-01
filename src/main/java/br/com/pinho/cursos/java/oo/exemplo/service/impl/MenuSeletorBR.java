@@ -1,9 +1,12 @@
-package br.com.pinho.cursos.java.oo.exemplo.service;
+package br.com.pinho.cursos.java.oo.exemplo.service.impl;
+
+import br.com.pinho.cursos.java.oo.exemplo.service.api.MenuSeletor;
 
 import java.util.Scanner;
 
-public class MenuSeletor {
+public class MenuSeletorBR implements MenuSeletor {
 
+    @Override
     public int execute() {
         System.out.println("Digite a opção desejada para operar.");
         System.out.println("0 - Sair.");
@@ -14,5 +17,11 @@ public class MenuSeletor {
 
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
+    }
+
+    @Override
+    public boolean tryAgain() {
+        System.out.println("Opção inválida. Tente novamente.");
+        return true;
     }
 }
