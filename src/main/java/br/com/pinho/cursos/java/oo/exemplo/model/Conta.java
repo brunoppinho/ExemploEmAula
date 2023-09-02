@@ -1,7 +1,6 @@
 package br.com.pinho.cursos.java.oo.exemplo.model;
 
 import java.math.BigDecimal;
-import java.util.Random;
 
 /**
  * https://github.com/brunoppinho/ExemploEmAula
@@ -44,4 +43,7 @@ public class Conta {
         this.senha = senha;
     }
 
+    public boolean possoRetirarOValor(BigDecimal valor) {
+        return this.getSaldo().compareTo(valor) > 0;
+    }
 }

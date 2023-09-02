@@ -1,6 +1,6 @@
-package br.com.pinho.cursos.java.oo.solid.o.certo;
+package br.com.pinho.cursos.java.oo.solid.o.heranca;
 
-public class Funcionario {
+public abstract class Funcionario {
 
     private double valorHora;
     private double horasMensaisContratuais;
@@ -45,4 +45,6 @@ public class Funcionario {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
+    public abstract double calculaSalario();
 }

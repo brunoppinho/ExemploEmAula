@@ -23,7 +23,7 @@ public class TransferenciaPix {
     }
 
     private void transfereDinheiro(Conta origem, BigDecimal valor, Conta destino) {
-        if (valor.compareTo(origem.getSaldo()) > 0) {
+        if (origem.possoRetirarOValor(valor)) {
             System.out.println("Saldo insuficiente");
         } else {
             origem.setSaldo(origem.getSaldo().subtract(valor));
